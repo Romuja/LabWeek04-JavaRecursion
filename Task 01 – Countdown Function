@@ -42,4 +42,4 @@ The output here will be
 Blastoff!
 
 3. what is the time complexity of this algorithm and why?
-It would be O(n)
+It would be O(n)because one recursive call per decrement until num == 0.
