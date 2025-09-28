@@ -1,0 +1,45 @@
+void countDown(int num)
+
+ {
+
+      if (num == 0) // test
+
+                  System.out.println("Blastoff!");
+
+       else {
+
+                  System.out.println("...");
+
+                    countDown(num-1); // recursive call
+
+             } 
+
+}
+
+1. what is the output of this code?
+The output here will be
+...
+...
+...
+Blastoff!
+
+2. modify it so that it prints only the even numbers. 
+void countDownEven(int num) {
+    if (num == 0) {
+        System.out.println("Blastoff!");
+    } else {
+        if (num % 2 == 0) {
+            System.out.println(num);
+        }
+        countDownEven(num - 1);
+    }
+}
+
+The output here will be
+6
+4
+2
+Blastoff!
+
+3. what is the time complexity of this algorithm and why?
+It would be O(n)
