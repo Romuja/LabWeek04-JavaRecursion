@@ -16,5 +16,7 @@ int fib(int n)
 
 }
 
+/*
 1. what is the time complexity of this algorithm and why?
 It's O(2ⁿ) because each call spawns two more calls, forming a binary tree of recursive calls. This leads to exponential growth in the number of calls.
+*/
