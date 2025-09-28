@@ -1,0 +1,24 @@
+int gcd(int x, int y) {
+
+      if (x % y == 0) //base case
+
+             return y;
+
+       else
+
+             return gcd(y, x % y);
+
+}
+
+1. what is the output of this code?
+The output here will just be 4 
+
+2. modify it to find the gcd using subtraction instead of %.
+int gcdSub(int x, int y) {
+    if (x == y)
+        return x;
+    else if (x > y)
+        return gcdSub(x - y, y);
+    else
+        return gcdSub(x, y - x);
+}
