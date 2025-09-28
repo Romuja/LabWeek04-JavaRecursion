@@ -1,0 +1,24 @@
+1. Write a function that prints "Hello World" n times recursively. 
+void printHello(int n) {
+    if (n <= 0) return;
+    System.out.println("Hello World");
+    printHello(n - 1);
+}
+2. Write a function that returns the sum of all numbers between n1 and n2 that are multiples of 7 using recursion.
+int sumMultiplesOf7(int n1, int n2) {
+    if (n1 > n2) return 0;
+    if (n1 % 7 == 0)
+        return n1 + sumMultiplesOf7(n1 + 1, n2);
+    else
+        return sumMultiplesOf7(n1 + 1, n2);
+}
+3. Write a function that implements the binary search algorithm recursively.
+int binarySearch(int[] arr, int target, int left, int right) {
+    if (left > right) return -1;
+    int mid = left + (right - left) / 2;
+    if (arr[mid] == target) return mid;
+    else if (target < arr[mid])
+        return binarySearch(arr, target, left, mid - 1);
+    else
+        return binarySearch(arr, target, mid + 1, right);
+}
