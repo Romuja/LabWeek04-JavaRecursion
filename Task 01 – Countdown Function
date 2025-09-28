@@ -16,12 +16,14 @@ void countDown(int num)
 
 }
 
-/*1. what is the output of this code?
+/*
+1. what is the output of this code?
 The output here will be
 ...
 ...
 ...
-Blastoff!*/
+Blastoff!
+*/
 
 //2. modify it so that it prints only the even numbers. 
 
@@ -36,11 +38,15 @@ void countDownEven(int num) {
     }
 }
 
-/*The output here will be
+/*
+The output here will be
 6
 4
 2
-Blastoff!*/
+Blastoff!
+*/
 
-/*3. what is the time complexity of this algorithm and why?
-It would be O(n)because one recursive call per decrement until num == 0.*/
+/*
+3. what is the time complexity of this algorithm and why?
+It would be O(n)because one recursive call per decrement until num == 0.
+*/
